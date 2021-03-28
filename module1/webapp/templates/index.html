@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Reviews</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Stars</td>
+        </tr>
+    </thead>
+    {% for index in range(0, reviews|length) %}
+        {% set review = reviews[index].split(',') %}
+        <tr>
+            <td>{{index + 1}}</td>
+            <td>{{review[0]}}</td>
+            <td>{{review[1]}}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

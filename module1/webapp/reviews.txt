@@ -1,3 +1,9 @@
 Narcos, 8.5
 Flubber, 6
 Red star, 2
+Canary,7
+Avatar,6
+Yellow sun,6
+Monsoon,5
+Half Beans,5
+Curly city,4
