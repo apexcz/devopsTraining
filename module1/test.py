@@ -11,7 +11,7 @@ print(sq_odd)
 
 print(((not False) and False) or (not (1 == 0)))
 
-def format_string(msg, prefix = 'string: ', postfix) -> int:
+def format_string(msg, postfix, prefix = 'string: ') -> int:
     print(prefix + msg + postfix)
 
 format_string('hello', postfix='.')
@@ -29,6 +29,28 @@ for item in list:
     finally:
         print('finally block')
     print('next item please!')
+
+
+class MyClass:
+    myClassVariable = ["Hello"]
+
+    def __init__(self):
+        self.myInstanceVariable = [1,2,3]
+
+objectOne = MyClass()
+objectTwo = MyClass()
+
+MyClass.myClassVariable = ["Hello", "World"]
+
+objectOne.myInstanceVariable.append(4)
+print('Before block')
+print(objectOne.myInstanceVariable)
+print(objectTwo.myInstanceVariable)
+print('After block')
+print(objectOne.myClassVariable)
+print(objectTwo.myClassVariable)
+print(MyClass.myClassVariable)
+
 
 def run_apple_guessing_game(target):
     while True:
